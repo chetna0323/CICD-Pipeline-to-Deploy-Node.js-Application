@@ -1,0 +1,23 @@
+name: Auto Deploy Node App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@master
+        with:
+          host: 65.2.130.28
+          username: ubuntu
+          key: ${{ secrets.EC2_KEY }}
+          script: |
+            cd /home/ubuntu/nodeapp/node-cicd-project
+            git pull origin main
+            npm install
+            pm2 restart all
