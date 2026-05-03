@@ -100,15 +100,20 @@ This shows deployment logs confirming successful execution of the pipeline.
 
 📁 Project Structure
 
+```
 CICD-Pipeline-to-Deploy-Node.js-Application/
 │── app.js
 │── package.json
 │── README.md
-│── .github/workflows/deploy.yml
+│── .github/
+│   └── workflows/
+│       └── deploy.yml
 │── screenshots/
-│    ├── final-output.png
-│    ├── github-actions.png
-│    ├── ec2.png
-│    ├── pm2.png
-│    ├── deployment-logs.png
-│    ├── architecture.png
+│   ├── final-output.png
+│   ├── github-actions.png
+│   ├── ec2.png
+│   ├── pm2.png
+│   ├── deployment-logs.png
+│   └── architecture.png
+```
+
