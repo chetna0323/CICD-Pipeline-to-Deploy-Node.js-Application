@@ -112,8 +112,3 @@ CICD-Pipeline-to-Deploy-Node.js-Application/
 │    ├── pm2.png
 │    ├── deployment-logs.png
 │    ├── architecture.png
-```
-
-
-
----
